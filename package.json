@@ -1,0 +1,32 @@
+{
+  "name": "MEAN_Project",
+  "version": "1.0.0",
+  "description": "MEAN Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndersonGitHub/MEAN_Project.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "Express",
+    "Angular",
+    "NodeJS"
+  ],
+  "author": "anderson.luiz.sjc@gmail.com",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/AndersonGitHub/MEAN_Project/issues"
+  },
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.5.0",
+    "express": "~4.13.4",
+    "body-parser": "~1.15.0",
+    "validator": "~5.1.0",
+    "mongoose": "~4.4.7"
+  }
+}
