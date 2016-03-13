@@ -5,7 +5,6 @@ Configuração do ambiente (Tutorial para Linux Ubuntu 14.04)
 ===========================================================
 
 1 - MongoDB
------------------------------------------------------------
 
 Obs.-> execute estes comandos no terminal do Linux (Ctrl + T):
 
@@ -31,12 +30,7 @@ Obs.-> execute estes comandos no terminal do Linux (Ctrl + T):
 
 Fonte: https://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/
 
-
-
-2 - NodeJS e NPM (Node Package Manager, necessário para instalação das dependências. Obs.: para esta aplicação, 
-as dependências serão baixadas ao clonar o projeto, porém há casos onde é necessário executar "npm install", que irá
-verificar as dependências no arquivo "package.json" e baixá-las do repositório NPM).
-----------------------------------------------------------------
+2 - NodeJS e NPM (Node Package Manager, necessário para instalação das dependências. Obs.: para esta aplicação, as dependências serão baixadas ao clonar o projeto, porém há casos onde é necessário executar "npm install", que irá verificar as dependências no arquivo "package.json" e baixá-las do repositório NPM).
 
 Obs.-> execute estes comandos no terminal do Linux (Ctrl + T):
 
@@ -55,12 +49,10 @@ Obs.-> execute estes comandos no terminal do Linux (Ctrl + T):
 Fonte: https://nodejs.org/en/download/package-manager/
 
 3 - Iniciando a aplicação
------------------------------------------------------------------
 
-Após a instalação do MongoDB, verifique se o mesmo está ativo. Abra seu navegador e digite "http://localhost/27017".
-Deverá aparecer uma mensagem como essa : "It looks like you are trying to access MongoDB over HTTP on the native driver port".
+Após a instalação do MongoDB, verifique se o mesmo está ativo. Abra seu navegador e digite "http://localhost/27017". Deverá aparecer uma mensagem como essa : "It looks like you are trying to access MongoDB over HTTP on the native driver port". 
 
-Pelo terminal (Ctrl + T), navegue até o diretório onde foi clonada a aplicação, por exemplo
+Pelo terminal (Ctrl + T), navegue até o diretório onde foi clonada a aplicação, por exemplo	
 	
 	cd ~/<myGitFolder>/MEAN_Project/node_app/
 	
@@ -73,42 +65,9 @@ Deverá surgir o log no terminal:
     "Application listening on port 5000"
 	
 Assim, abra seu navegador e digite "http://localhost:5000"
---------------------------------------------------------------------
 
 
 Atenciosamente,
 
 Anderson Luiz Fernandes
 "anderson.luiz.sjc@gmail.com"
-
- _________________________________
-  |:::::::::::::;;::::::::::::::::::|
-  |:::::::::::'~||~~~``:::::::::::::|
-  |::::::::'   .':     o`:::::::::::|
-  |:::::::' oo | |o  o    ::::::::::|
-  |::::::: 8  .'.'    8 o  :::::::::|
-  |::::::: 8  | |     8    :::::::::|
-  |::::::: _._| |_,...8    :::::::::|
-  |::::::'~--.   .--. `.   `::::::::|
-  |:::::'     =8     ~  \ o ::::::::|
-  |::::'       8._ 88.   \ o::::::::|
-  |:::'   __. ,.ooo~~.    \ o`::::::|
-  |:::   . -. 88`78o/:     \  `:::::|
-  |::'     /. o o \ ::      \88`::::|   "He will join us or die."
-  |:;     o|| 8 8 |d.        `8 `:::|
-  |:.       - ^ ^ -'           `-`::|
-  |::.                          .:::|
-  |:::::.....           ::'     ``::|
-  |::::::::-'`-        88          `|
-  |:::::-'.          -       ::     |
-  |:-~. . .                   :     |
-  | .. .   ..:   o:8      88o       |
-  |. .     :::   8:P     d888. . .  |
-  |.   .   :88   88      888'  . .  |
-  |   o8  d88P . 88   ' d88P   ..   |
-  |  88P  888   d8P   ' 888         |
-  |   8  d88P.'d:8  .- dP~ o8       |   Darth Vader (1)
-  |      888   888    d~ o888    LS |
-  |_________________________________|
-
-http://www.chris.com/ascii/index.php?art=movies/star%20wars
