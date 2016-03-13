@@ -2,7 +2,7 @@
   "name": "MEAN_Project",
   "version": "1.0.0",
   "description": "MEAN Application",
-  "main": "index.js",
+  "main": "./node_app/node_app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

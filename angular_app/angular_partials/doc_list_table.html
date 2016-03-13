@@ -1,0 +1,49 @@
+<div class="container">
+	<h3>Lista</h3>
+	<table class="table table-hover table-striped" role="table">
+		<thead>
+			<tr class="col-md-4">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+					<input type="text" class="form-control" ng-model="filter" ng-model-options="{updateOn:'default blur', debounce:{'default':1000, 'blur':0}}"
+					placeholder="Busca" />
+				</div>
+			</tr>
+			<tr>
+				<th class="col-md-1"></th>
+				<th class="col-md-3"><a href="" ng-click="order('attribute_1')">Atributo 1</a></th>
+				<th class="col-md-3"><a href="" ng-click="order('attribute_2')">Atributo 2</a></th>
+				<th class="col-md-3"><a href="" ng-click="order('attribute_3')">Atributo 3</a></th>
+				<th class="col-md-1"></th>
+				<th class="col-md-1"></th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr ng-repeat="doc in docs | filter:filter | orderBy:selected_order">
+				<td>
+					<button class="btn btn-primary" ng-disabled="checked == $index" ng-click="change_index($index)">Atualizar</button>
+				</td>
+				<td>
+					<div ng-bind="doc.attribute_1" ng-hide="checked == $index"></div>
+					<input type="text" ng-model="doc.attribute_1" ng-show="checked == $index">
+				</td>
+				<td>
+					<div ng-bind="doc.attribute_2" ng-hide="checked == $index"></div>
+					<input type="text" ng-model="doc.attribute_2" ng-show="checked == $index">
+				</td>
+				<td>
+					<div ng-bind="doc.attribute_3" ng-hide="checked == $index"></div>
+					<input type="text" ng-model="doc.attribute_3" ng-show="checked == $index">
+				</td>
+				<td>
+					<button class="btn btn-success" ng-disabled="checked != $index" ng-click="update_doc(doc); change_index($index)">Salvar</button>
+				</td>
+				<td>
+					<button class="btn btn-danger" ng-click="delete_doc(doc._id)">Excluir</button>
+				</td>
+
+			</tr>
+		</tbody>
+	</table>
+</div>

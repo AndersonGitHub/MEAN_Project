@@ -4,13 +4,28 @@
 
 <head>
 	<title>An XHTML 1.0 Strict standard template</title>
-	<meta http-equiv="content-type" 
-		content="text/html;charset=utf-8" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="angular_app/angular_app.js"></script>
+	<script src="angular_app/angular_controllers/document_crud_ctrl.js"></script>
+	<script src="angular_app/angular_services/document_ajax_service.js"></script>
+
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+	<style></style>
+
 </head>
 
-<body>
+<body ng-app="angular_app">
 
-     <p>… Your HTML content here …</p>
+	<div class="container">
+		<div ng-controller="document_crud_ctrl" class="jumbotron">			
+			<div ng-include="'angular_app/angular_partials/doc_insert_form.html'"></div>
+			<div ng-include="'angular_app/angular_partials/doc_list_table.html'"></div>
+		</div>
+	</div>
 
 </body>
+
 </html>

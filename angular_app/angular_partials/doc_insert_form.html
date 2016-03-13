@@ -1,0 +1,26 @@
+<div class="container">
+	<h3>Cadastro</h3>
+	<form role="form" name="doc_insert_form" novalidate>
+		<div class="row form-group">
+			<div class="col-md-12">
+				<input type="text" class="form-control" ng-model="document.attribute_1" ng-required="true" placeholder="Atributo 1">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-12">
+				<input type="text" class="form-control" ng-model="document.attribute_2" ng-required="true" placeholder="Atributo 2">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-12">
+				<input type="text" class="form-control" ng-model="document.attribute_3" ng-required="true" placeholder="Atributo 3">
+			</div>			
+		</div>
+
+		<div class="row form-group">
+			<div class="col-sm-6">
+				<button type="submit" class="btn btn-lg btn-success" ng-click="insert_doc(document)" ng-disabled="doc_insert_form.$invalid || doc_insert_form.$pristine">Cadastrar</button>
+			</div>
+		</div>
+	</form>
+</div>
