@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="angular_app">
 
 <head>
 	<title>An XHTML 1.0 Strict standard template</title>
@@ -10,6 +10,9 @@
 	<script src="angular_app/angular_app.js"></script>
 	<script src="angular_app/angular_controllers/document_crud_ctrl.js"></script>
 	<script src="angular_app/angular_services/document_ajax_service.js"></script>
+	
+	<script src="angular_app/angular_directives/form_directive.js"></script>
+	<script src="angular_app/angular_directives/table_directive.js"></script>
 
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
@@ -17,12 +20,12 @@
 
 </head>
 
-<body ng-app="angular_app">
+<body>
 
-	<div class="container">
-		<div ng-controller="document_crud_ctrl" class="jumbotron">			
-			<div ng-include="'angular_app/angular_partials/doc_insert_form.html'"></div>
-			<div ng-include="'angular_app/angular_partials/doc_list_table.html'"></div>
+	<div class="container" ng-controller="document_crud_ctrl">
+		<div class="jumbotron">			
+			<my-form></my-form>
+			<my-table></my-table>
 		</div>
 	</div>
 
